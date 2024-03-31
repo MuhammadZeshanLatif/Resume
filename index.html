@@ -141,66 +141,77 @@
 		<div class="home-slider  owl-carousel">
 			<div class="slider-item ">
 				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="false">
-						<div class="one-forth js-fullheight order-md-last img" style="background-image:url(images/);">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Muhammad Zeeshan</span></h1>
+				<div class="offset-lg-1 col-lg-10">
+					<div class="row">
+						<div class="col-md-6 d-md-flex no-gutters slider-text align-items-end justify-content-end"
+							data-scrollax-parent="false">
+							<div class="one-forth js-fullheight order-md-last img"
+								style="background-image:url(images/);">
+								<div class="overlay"></div>
+							</div>
+							<div class="one-forth d-flex  align-items-center ftco-animate"
+								data-scrollax=" properties: { translateY: '70%' }">
+								<div class="text">
+									<span class="subheading">Hello!</span>
+									<h1 class="mb-4 mt-3">I'm <span>Muhammad Zeeshan</span></h1>
 
-								<!-- Element to contain animated typing -->
-								<span id="typing-animation"></span>
+									<!-- Element to contain animated typing -->
+									<span id="typing-animation"></span>
 
-								<script>
+									<script>
 
-									// Initialize the typing animation
-									const typingAnimationElement = document.getElementById('typing-animation');
+										// Initialize the typing animation
+										const typingAnimationElement = document.getElementById('typing-animation');
 
-									// Create an array of typing text
-									const typingTexts = [
-										'Software Engineer',
-										'Frontend Developer',
-										'JavaScript Instructor',
-									];
+										// Create an array of typing text
+										const typingTexts = [
+											'Software Engineer',
+											'Frontend Developer',
+											'JavaScript Instructor',
+										];
 
-									// Create a function to display the typing animation for a given text
-									function playTypingAnimation(text) {
-										// Loop through each character and add it to the element
-										for (let i = 0; i < text.length; i++) {
+										// Create a function to display the typing animation for a given text
+										function playTypingAnimation(text) {
+											// Loop through each character and add it to the element
+											for (let i = 0; i < text.length; i++) {
+												setTimeout(() => {
+													typingAnimationElement.textContent += text[i];
+												}, i * 200); // Increase the delay to slow down the typing animation
+											}
+
+											// Once the animation is complete, reset the text and start over
 											setTimeout(() => {
-												typingAnimationElement.textContent += text[i];
-											}, i * 200); // Increase the delay to slow down the typing animation
+												typingAnimationElement.textContent = '';
+												playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+											}, text.length * 200);
 										}
 
-										// Once the animation is complete, reset the text and start over
-										setTimeout(() => {
-											typingAnimationElement.textContent = '';
-											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-										}, text.length * 200);
-									}
+										// Start the typing animation loop
+										playTypingAnimation(typingTexts[0]);
 
-									// Start the typing animation loop
-									playTypingAnimation(typingTexts[0]);
+									</script>
 
-								</script>
+									<br>
+									<br>
+									<h2>Web Developer</h2>
 
-								<br>
-								<br>
-								<h2>Web Developer</h2>
-
-								<h2 class="d-flex" style="margin-bottom: 0">With over 2 years of experience</h2>
-								<br>
-								<p><a href="https://www.linkedin.com/in/muhammad-zeeshan-latif%F0%9F%8C%9F-1317b2255/"
-										target="_blank" class="btn btn-primary py-3 px-4">Linkdin</a>
-									<a href="https://github.com/MuhammadZeshanLatif" target="_blank"
-										class="btn btn-white btn-outline-white py-3 px-4">My works</a>
-								</p>
+									<h2 class="d-flex" style="margin-bottom: 0">With over 2 years of experience</h2>
+									<br>
+									<p><a href="https://www.linkedin.com/in/muhammad-zeeshan-latif%F0%9F%8C%9F-1317b2255/"
+											target="_blank" class="btn btn-primary py-3 px-4">Linkdin</a>
+										<a href="https://github.com/MuhammadZeshanLatif" target="_blank"
+											class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+									</p>
+								</div>
 							</div>
+						</div>
+						<div style="background-image:url(images/bg_1.png); background-repeat: no-repeat; background-size:cover; background-size:112%;" class="col-md-6  d-md-flex no-gutters slider-text align-items-end justify-content-end"
+							data-scrollax-parent="false">
+							<div class="one-forth js-fullheight order-md-last img"
+								 >
+								<div class="overlay"></div>
+							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -476,32 +487,33 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Projects</h1>
 					<h2 class="mb-4">Projects</h2>
-					<p>Below are the sample projects on HTML, CSS5, BootStrap, JQuery, JavaScript, BlockChain, ReactJS.</p>
+					<p>Below are the sample projects on HTML, CSS5, BootStrap, JQuery, JavaScript, BlockChain, ReactJS.
+					</p>
 				</div>
 			</div>
 			<div class="row d-flex">
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="https://revoltechdigital.com/l"
-							class="block-20 zoom-effect" target="_blank" style="background-image: url('images/proj_1.png');">
+						<a href="https://revoltechdigital.com/l" class="block-20 zoom-effect" target="_blank"
+							style="background-image: url('images/proj_1.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a
-								target="_blank"	href="https://revoltechdigital.com/l">Revolt Digital Tech</a></h3>
+							<h3 class="heading"><a target="_blank" href="https://revoltechdigital.com/l">Revolt Digital
+									Tech</a></h3>
 							<p>This project is create by using html, css, jQuery aslo using css framework bootstrap.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="https://brandmarkshield.com/"
-							class="block-20 zoom-effect" target="_blank" style="background-image: url('images/proj_2.png');">
+						<a href="https://brandmarkshield.com/" class="block-20 zoom-effect" target="_blank"
+							style="background-image: url('images/proj_2.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a
-								target="_blank"	href="https://brandmarkshield.com/">Brandmark Shield</a></h3>
+							<h3 class="heading"><a target="_blank" href="https://brandmarkshield.com/">Brandmark
+									Shield</a></h3>
 							<p>I also created this project using HTML, CSS, jQuery, and the Bootstrap CSS framework.</p>
 						</div>
 					</div>

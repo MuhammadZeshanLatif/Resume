@@ -133,6 +133,7 @@ sup {
   top: -.5em; }
 
 a {
+
   color: #007bff;
   text-decoration: none;
   background-color: transparent; }
@@ -9703,3 +9704,73 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+    @media (max-width: 1440px) {}
+
+    @media (max-width: 1200px) {
+        
+    
+    }
+    
+    @media (max-width : 1025px) {
+     
+    }
+    
+    @media (max-width : 1023px) {
+    
+    
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-width : 768px) and (max-width : 1024px) {
+     
+    }
+    
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+    
+     
+    }
+    
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+    
+    }
+    
+    
+    /* iPhone 6-8 Plus */
+    @media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : portrait) {
+        /* Styles */
+    }
+    
+    @media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+        /* Styles */
+    }
+    
+    
+    
+    /* iPhone 6-8  */
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+        /* Styles */
+    }
+    
+    @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+        /* Styles */
+    }
+    
+    
+    
+    /* Android (Pixel 2) */
+    @media only screen and (min-width : 412px) and (max-width : 684px) and (orientation : portrait) {
+        /* Styles */
+    }
+    
+    @media only screen and (min-width : 412px) and (max-width : 684px) and (orientation : landscape) {
+       
+    }
+    
+    /* Iphone X */
+    @media only screen and (min-width : 375px) and (max-width : 734px) and (orientation : portrait) {}
+    
+    @media only screen and (min-width : 320px) and (max-width : 767px) {
+   
+    }
