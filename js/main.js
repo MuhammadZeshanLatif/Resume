@@ -375,22 +375,9 @@ $(document).ready(function () {
 			// portfolioData += portfolioDataItem; // Appending data to portfolioData
 		}
 		$('.projects').html(portfolioData)
-		console.log(portfolioData); // Logging the accumulated portfolioData
+	
 	};
-
-	putData(); // Call the async function
-
-
-	// console.log(projectCaptions);
-
-
-	// console.log(projectNames);
-
-	// console.log(projectLinks);
-
-
-	// console.log(imageLinks);
-
+	putData();
 
 });
 
