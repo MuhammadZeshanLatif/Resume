@@ -356,28 +356,46 @@ $(document).ready(function () {
 		"Showcase your skills and experience with a portfolio that stands out from the rest." // My Portfolio
 	];
 
-	let portfolioData = "";
-
 	let putData = async () => {
 		for (let i = 0; i < projectNames.length; i++) {
-			portfolioData += await `<div class="col-md-4 d-flex">
-			<div class="blog-entry justify-content-end">
-				<a href="${projectLinks[i]}" class="block-20 zoom-effect" target="_blank"
-					style="background-image: url('${imageLinks[i]}');">
-				</a>
-				<div class="text mt-3 float-right d-block">
+			const div = document.createElement('div');
+			div.className = 'col-md-4 d-flex';
 	
-					<h3 class="heading"><a target="_blank" href="${projectLinks[i]}">${projectNames[i]}</a></h3>
-					<p>${projectCaptions[i]}</p>
+			const innerHTML = `
+				<div class="blog-entry justify-content-end">
+					<a href="${projectLinks[i]}" class="block-20 zoom-effect" target="_blank"
+						data-src="${imageLinks[i]}">
+					</a>
+					<div class="text mt-3 float-right d-block">
+						<h3 class="heading"><a target="_blank" href="${projectLinks[i]}">${projectNames[i]}</a></h3>
+						<p>${projectCaptions[i]}</p>
+					</div>
 				</div>
-			</div>
-		</div>`; // Corrected variable name and removed unnecessary "+" sign
-			// portfolioData += portfolioDataItem; // Appending data to portfolioData
-		}
-		$('.projects').html(portfolioData)
+			`;
 	
+			div.innerHTML = innerHTML;
+	
+			$('.projects').append(div);
+		}
+	
+		// Lazy load background images using Intersection Observer
+		const observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					const backgroundImage = entry.target.getAttribute('data-src');
+					entry.target.style.backgroundImage = `url('${backgroundImage}')`;
+					observer.unobserve(entry.target);
+				}
+			});
+		});
+	
+		document.querySelectorAll('.block-20').forEach(image => {
+			observer.observe(image);
+		});
 	};
+	
 	putData();
+	
 
 });
 
