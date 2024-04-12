@@ -275,47 +275,47 @@ AOS.init({
 
 })(jQuery);
 $(document).ready(function () {
-	const imageLinks = [
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/f4245e12-ff8d-4b41-afd3-daddb58f1969", // proj_1
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/f4245e12-ff8d-4b41-afd3-daddb58f1969", // proj_1
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/d774e185-2eb2-4ba3-8d4d-ee9130bf6f31", // proj_2
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/a7ec2f09-8f2c-4772-9d39-d413fd698b7f", // proj_3
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/e94199bf-ad90-4887-8de5-3c20484bb8d4", // proj_4
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/3b1358be-fd7b-49f0-8179-723398cd8306", // proj_5
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/26d95062-4c9c-4622-83c1-3957bfe6ad5f", // proj_6
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/20bac465-8b6e-40de-a8d6-a76d8fd3aee1", // proj_7
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/b4eb6a46-9d81-4a1d-b90d-980470feca08", // proj_8
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/ac8bff43-7a64-4fc7-b0a0-d5d97614efc7", // proj_9
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/1df182a3-9ac0-4553-abae-2fc3dc62d8e9", // proj_10
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/f27e8b81-a589-487f-82c2-246887b83029", // proj_11
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/9433717f-fb45-455a-a739-8179eea9c6df", // proj_12
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/f143659c-5d4e-42c0-aedc-f1c2e65f399e", // proj_13
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/bee70a70-3ae9-463a-95fc-a2f90a26a5d7", // proj_14
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/cdcca459-fb3d-4c12-851c-407b85cdd89c", // proj_15
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/4b2e2ecb-7697-474b-8434-caec4790add2", // proj_16
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/6869adba-e96e-48c4-823d-c41efc88d663", // proj_17
-		"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/58c1f763-921f-4794-8c95-dd29f94fae27", // proj_18
-	];
-	// const imageLinks=[
-	// 	"https://media.giphy.com/media/SyR6laAns9iDbGcGv5/giphy.gif",
-	// 	"https://media.giphy.com/media/ZPsXvQfhCobuDarDU9/giphy.gif",
-	// 	"https://media.giphy.com/media/4eEGG5r6WlxfKMMlx8/giphy.gif",
-	// 	"https://media.giphy.com/media/VqYzyEWe8Hs1rg5FTw/giphy.gif",
-	// 	"https://media.giphy.com/media/2RdyCTsukO1bI4RXgk/giphy.gif",
-	// 	"https://media.giphy.com/media/5DvYqkFgMaqJdtQv3P/giphy.gif",
-	// 	"https://media.giphy.com/media/hIf7bGvrmOwZ69kOfb/giphy.gif",
-	// 	"https://media.giphy.com/media/zRdVwQ9GOdt40IpPzH/giphy.gif",
-	// 	"https://media.giphy.com/media/V8HLArreQqDgRILURD/giphy.gif",
-	// 	"https://media.giphy.com/media/kpbUYzuLyVsHutmM3f/giphy.gif",
-	// 	"https://media.giphy.com/media/x7CL2WdlAoo3dF4pHm/giphy.gif",
-	// 	"https://media.giphy.com/media/4Y8iWnsOmigoteWWN8/giphy.gif",
-	// 	"https://media.giphy.com/media/M8Dfv62QkMB9AK7k8Y/giphy.gif",
-	// 	"https://media.giphy.com/media/Gon71SLBulD55BHnM6/giphy.gif",
-	// 	"https://media.giphy.com/media/d4VHE0g1IeJpT2cs1C/giphy.gif",
-	// 	"https://media.giphy.com/media/Mq2LBQAb2o1EBjCM9B/giphy.gif",
-	// 	"https://media.giphy.com/media/SC52jScXovz5Lx2Lq6/giphy.gif",
-	// 	"https://media.giphy.com/media/8kQlB6BSHW6kBxOqaw/giphy.gif"
-	// ]
+	// const imageLinks = [
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/f4245e12-ff8d-4b41-afd3-daddb58f1969", // proj_1
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/f4245e12-ff8d-4b41-afd3-daddb58f1969", // proj_1
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/d774e185-2eb2-4ba3-8d4d-ee9130bf6f31", // proj_2
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/a7ec2f09-8f2c-4772-9d39-d413fd698b7f", // proj_3
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/e94199bf-ad90-4887-8de5-3c20484bb8d4", // proj_4
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/3b1358be-fd7b-49f0-8179-723398cd8306", // proj_5
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/26d95062-4c9c-4622-83c1-3957bfe6ad5f", // proj_6
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/20bac465-8b6e-40de-a8d6-a76d8fd3aee1", // proj_7
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/b4eb6a46-9d81-4a1d-b90d-980470feca08", // proj_8
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/ac8bff43-7a64-4fc7-b0a0-d5d97614efc7", // proj_9
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/1df182a3-9ac0-4553-abae-2fc3dc62d8e9", // proj_10
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/f27e8b81-a589-487f-82c2-246887b83029", // proj_11
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/9433717f-fb45-455a-a739-8179eea9c6df", // proj_12
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/f143659c-5d4e-42c0-aedc-f1c2e65f399e", // proj_13
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/bee70a70-3ae9-463a-95fc-a2f90a26a5d7", // proj_14
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/cdcca459-fb3d-4c12-851c-407b85cdd89c", // proj_15
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/4b2e2ecb-7697-474b-8434-caec4790add2", // proj_16
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/6869adba-e96e-48c4-823d-c41efc88d663", // proj_17
+	// 	"https://github.com/MuhammadZeshanLatif/Resume.github.io/assets/110631680/58c1f763-921f-4794-8c95-dd29f94fae27", // proj_18
+	// ];
+	const imageLinks=[
+		"https://media.giphy.com/media/SyR6laAns9iDbGcGv5/giphy.gif",
+		"https://media.giphy.com/media/ZPsXvQfhCobuDarDU9/giphy.gif",
+		"https://media.giphy.com/media/4eEGG5r6WlxfKMMlx8/giphy.gif",
+		"https://media.giphy.com/media/VqYzyEWe8Hs1rg5FTw/giphy.gif",
+		"https://media.giphy.com/media/2RdyCTsukO1bI4RXgk/giphy.gif",
+		"https://media.giphy.com/media/5DvYqkFgMaqJdtQv3P/giphy.gif",
+		"https://media.giphy.com/media/hIf7bGvrmOwZ69kOfb/giphy.gif",
+		"https://media.giphy.com/media/zRdVwQ9GOdt40IpPzH/giphy.gif",
+		"https://media.giphy.com/media/V8HLArreQqDgRILURD/giphy.gif",
+		"https://media.giphy.com/media/kpbUYzuLyVsHutmM3f/giphy.gif",
+		"https://media.giphy.com/media/x7CL2WdlAoo3dF4pHm/giphy.gif",
+		"https://media.giphy.com/media/4Y8iWnsOmigoteWWN8/giphy.gif",
+		"https://media.giphy.com/media/M8Dfv62QkMB9AK7k8Y/giphy.gif",
+		"https://media.giphy.com/media/Gon71SLBulD55BHnM6/giphy.gif",
+		"https://media.giphy.com/media/d4VHE0g1IeJpT2cs1C/giphy.gif",
+		"https://media.giphy.com/media/Mq2LBQAb2o1EBjCM9B/giphy.gif",
+		"https://media.giphy.com/media/SC52jScXovz5Lx2Lq6/giphy.gif",
+		"https://media.giphy.com/media/8kQlB6BSHW6kBxOqaw/giphy.gif"
+	]
 	const projectLinks = [
 		"https://revoltechdigital.com/", // Project 1
 		"https://brandmarkshield.com/", // Project 2
