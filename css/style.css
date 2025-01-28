@@ -13890,7 +13890,10 @@ textarea.form-control {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
+.experience-sec .resume-wrap.ftco-animate.fadeInUp.ftco-animated {
+  /* max-height: 650px; */
+  height: 550px;
+}
 #ftco-loader.show {
   -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
   -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
@@ -13974,6 +13977,12 @@ textarea.form-control {
 @media (max-width : 1025px) {}
 
 @media (max-width : 1023px) {}
+@media only screen and (max-width : 768px){
+  .experience-sec .resume-wrap.ftco-animate.fadeInUp.ftco-animated {
+    /* max-height: 650px; */
+    height: 650px;
+  }
+}
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {}
